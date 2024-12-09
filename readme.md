@@ -1,4 +1,4 @@
-# Disentangle to Decay: Linear Attention with Trainable Positional Decay for Length Extrapolation :rocket:
+# Disentangle to Decay: Linear Attention with Trainable Decay Factor :rocket:
 
 This repository contains the implementation of the paper "Disentangle to Decay: Linear Attention with Trainable Positional Decay for Length Extrapolation".  We design a trainable positional encoding for linear attention that can freely transform between RPE and APE, and improve its stability by disentanglement. Model with this encoding achieves better performance than existing PE for linear attention.
 
