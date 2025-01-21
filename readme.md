@@ -4,7 +4,7 @@ This repository contains the implementation of the paper "Disentangle to Decay: 
 
 ## :tada: News
 
-We'll update all manuscripts to demonstrate revisions soon (12/05).
+This work has been accepted by COLING 2025!
 
 ## :white_check_mark: Abstract
 
@@ -54,3 +54,33 @@ To evaluate the model on a specific dataset, you can run code in SFT file.
 ## :black_nib: Test Generate
 
 If you want to test the generation of your model after training, you can use  **test_generate.py** for model inference
+
+
+# Cite
+
+Please cite us using the following bibtex
+```bibtex
+@inproceedings{tong-etal-2025-disentangle,
+    title = "Disentangle to Decay: Linear Attention with Trainable Decay Factor",
+    author = "Tong, Haibo  and
+      Zhang, Chenyang  and
+      Lin, Jiayi  and
+      Hou, Bingxuan  and
+      Hong, Qingqing  and
+      Wang, Junli",
+    editor = "Rambow, Owen  and
+      Wanner, Leo  and
+      Apidianaki, Marianna  and
+      Al-Khalifa, Hend  and
+      Eugenio, Barbara Di  and
+      Schockaert, Steven",
+    booktitle = "Proceedings of the 31st International Conference on Computational Linguistics",
+    month = jan,
+    year = "2025",
+    address = "Abu Dhabi, UAE",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.coling-main.660/",
+    pages = "9877--9890",
+    abstract = "Linear attention enhances inference efficiency of Transformer and has attracted research interests as an efficient backbone of language models. Existing linear attention based models usually exploit decay factor based positional encoding (PE), where attention scores decay exponentially with increasing relative distance. However, most work manually designs a non-trainable decay factor of exponential calculation, which limits further optimization. Our analysis reveals directly training decay factor is unstable because of large gradients. To address this, we propose a novel PE for linear attention named Disentangle to Decay (D2D). D2D disentangles decay factor into two parts to achieve further optimization and stable training. Moreover, D2D can be transformed into recurrent form for efficient inference. Experiments demonstrate that D2D achieves stable training of decay factor, and enhances performance of linear attention in both normal context length and length extrapolation scenarios."
+}
+```
